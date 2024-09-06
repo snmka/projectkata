@@ -1,2 +1,2 @@
------1.3
-project
+
+https://snmka.github.io/projectkata/
