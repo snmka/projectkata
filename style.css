@@ -179,7 +179,7 @@ body{
         content: "";
         width: 40px;
         height: 40px;
-        background: url("/pictures/repair.svg");
+        background: url("pictures/repair.svg");
         margin-left: 8px;
     }
     .desktop-list__item--margin{
@@ -190,7 +190,7 @@ body{
 }
     .desktop-list__item--margin::after{
     content: "";
-        background: url("/pictures/checkstatus.svg");
+        background: url("pictures/checkstatus.svg");
         width: 40px;
         height: 40px;
         margin-left: 8px;
