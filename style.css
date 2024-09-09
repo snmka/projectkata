@@ -167,7 +167,7 @@ body{
     .desktop-list__item{
         display: flex;
         align-items: center;
-        margin-right: 32px;
+        margin-right: 40px;
     }
     .desktop-list__item--flex{
         font-family: TT Lakes-Medium, sans-serif;
@@ -177,6 +177,8 @@ body{
     }
     .desktop-list__item--flex::after {
         content: "";
+        left: 8px;
+        position: relative;
         width: 40px;
         height: 40px;
         background: url("pictures/repair.svg");
@@ -190,6 +192,8 @@ body{
 }
     .desktop-list__item--margin::after{
     content: "";
+        left: 8px;
+        position: relative;
         background: url("pictures/checkstatus.svg");
         width: 40px;
         height: 40px;
