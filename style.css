@@ -174,9 +174,25 @@ body{
         display: flex;
         align-items: center;
         font-size: 16px;
-
+    }
+    .desktop-list__item--flex::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: url("/pictures/repair.svg");
+        margin-left: 8px;
     }
     .desktop-list__item--margin{
+        font-family: TT Lakes-Medium, sans-serif;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+}
+    .desktop-list__item--margin::after{
+    content: "";
+        background: url("/pictures/checkstatus.svg");
+        width: 40px;
+        height: 40px;
         margin-left: 8px;
     }
 }
@@ -322,12 +338,13 @@ body{
 }
 
 .read-more__button::before{
-    content: url("pictures/read-more.svg");
+    content: "";
+    background: url("pictures/read-more.svg");
     position: absolute;
     width: 24px;
     height: 24px;
     top: -2px;
-    left: -15px;
+    left: -17px;
 }
 @media (min-width: 1120px) {
     .read-more__button::after {
