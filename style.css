@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: TT Lakes;
     src: url(/fonts/TTLakes-Regular.ttf);
@@ -383,4 +384,159 @@ body{
     .main-image__image{
         width: 530px;
     }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: "TT Lakes-Regular" sans-serif;
+    letter-spacing: 0.2px;
+}
+
+.sidebar {
+    font-family: "TT Lakes-Medium" sans-serif;
+    max-width: 320px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 14px 0px 60px 0px gainsboro;
+
+}
+.sidebar-header__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 24px;
+    justify-content: space-between;
+}
+
+.sidebar-main__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 18px;
+    padding: 0;
+}
+.sidebar-header__item:nth-child(2){
+    flex-grow: 2;
+}
+.sidebar-main__item {
+    padding: 0 24px;
+    position: relative;
+}
+.sidebar-main__item:hover::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 40px;
+    background-color:#41F6D7;
+    border-radius: 20px;
+    top: 0px;
+    left: -2px;
+}
+.sidebar-main__link {
+    text-decoration: none;
+    color: #1B1C21;
+    display: block;
+    padding: 7px 10px;
+}
+
+.sidebar__btn {
+    border: none;
+    background-color: #fff;
+
+}
+.close{
+    width: 40px;
+    height: 40px;
+    background-image: url("pictures/close.svg");
+    background-color: transparent;
+}
+.search{
+    width: 40px;
+    height: 40px;
+    background-image: url("pictures/search.svg");
+    background-color: transparent;
+}
+
+.call{
+    width: 40px;
+    height: 40px;
+    background-image: url("pictures/call.svg");
+    background-color: transparent;
+}
+
+.chat{
+    width: 40px;
+    height: 40px;
+    background-image: url("pictures/chat.svg");
+    background-color: transparent;
+
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    background-image: url("pictures/profile.svg");
+    background-color: transparent;
+
+}
+
+.sidebar-footer__container {
+    padding-left: 24px;
+
+}
+.sidebar-footer__list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+.sidebar-footer__link {
+    text-decoration: none;
+    color: #1B1C21;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.tel {
+    font-family: TT Lakes-Bold, sans-serif;
+    font-size: 24px;
+}
+.lang__list {
+    list-style-type: none;
+    display: flex;
+    gap: 7px;
+    padding: 0;
+
+}
+
+.lang__list-item{
+    margin-top: 40px;
+}
+.sidebar-main__link:hover,
+.lang__button:hover,
+.sidebar-footer__link:hover {
+    color: #7E7E82;
+}
+.sidebar-header__item:hover,
+.sidebar-footer__item:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.lang__button {
+    color: #1B1C21;
+    background-color: transparent;
+    border: none;
+}
+.ru {
+    color: #7E7E82;
 }
